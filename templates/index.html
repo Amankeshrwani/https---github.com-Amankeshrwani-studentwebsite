@@ -1,6 +1,16 @@
 {% extends 'bace.html' %}
 {% block body %}
-  
+<div>
+  <ul>
+    {% for id in allId %}
+    <li>
+      <div class="alert alert-dark" role="alert">
+        {{id}}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 
 
-  {% endblock body %}
+{% endblock body %}
