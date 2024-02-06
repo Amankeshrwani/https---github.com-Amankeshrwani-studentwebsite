@@ -1,0 +1,17 @@
+{% extends 'bace.html' %}
+{% block body %}
+<div>
+  <ul>
+    {% for id in allId %}
+    <li>
+      <div class="alert alert-dark" role="alert">
+        {{id}}
+        <a class="btn btn-primary" href="/clearId/{{id.sno}}">Clear{{loop.index}}</a>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+{% endblock body %}
